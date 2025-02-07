@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Te Amo Candela</title>
+    <style>
+        body {
+            text-align: center;
+            font-family: Arial, sans-serif;
+            background-color: #fff0f6;
+        }
+        h1 {
+            color: #ff4081;
+        }
+        .mensaje {
+            font-size: 1.5em;
+            margin: 10px;
+        }
+        .corazon {
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Te Amo Candela ❤️</h1>
+    <div id="mensajes"></div>
+
+    <script>
+        const idiomas = {
+            "Español": "Te amo Candela",
+            "Inglés": "I love you Candela",
+            "Francés": "Je t'aime Candela",
+            "Alemán": "Ich liebe dich Candela",
+            "Italiano": "Ti amo Candela",
+            "Portugués": "Eu te amo Candela",
+            "Japonés": "愛してる カンデラ (Aishiteru Candela)",
+            "Chino": "我爱你 Candela (Wǒ ài nǐ Candela)",
+            "Ruso": "Я люблю тебя, Кандела (Ya lyublyu tebya, Candela)",
+            "Árabe": "أنا أحبك كانديلا (Ana uhibbuki Candela)",
+            "Hindi": "मैं तुमसे प्यार करता हूँ कैंडेला (Main tumse pyaar karta hoon Candela)",
+            "Coreano": "사랑해 캔델라 (Saranghae Candela)",
+            "Turco": "Seni seviyorum Candela",
+            "Holandés": "Ik hou van jou Candela",
+            "Griego": "Σ' αγαπώ Candela (S' agapó Candela)",
+            "Sueco": "Jag älskar dig Candela",
+            "Finlandés": "Rakastan sinua Candela",
+            "Polaco": "Kocham cię Candela",
+            "Hebreo": "אני אוהב אותך קנדלה (Ani ohev otach Candela)",
+            "Vietnamita": "Anh yêu em Candela",
+            "Húngaro": "Szeretlek Candela",
+            "Checo": "Miluji tě Candela",
+            "Tagalo (Filipinas)": "Mahal kita Candela",
+            "Afrikáans": "Ek is lief vir jou Candela",
+            "Bengalí": "আমি তোমাকে ভালোবাসি ক্যান্ডেলা (Ami tomake bhalobashi Candela)",
+            "Euskera": "Maite zaitut Candela",
+            "Catalán": "T'estimo Candela",
+            "Gallego": "Quérote Candela",
+            "Esperanto": "Mi amas vin Candela"
+        };
+
+        const contenedor = document.getElementById("mensajes");
+        
+        for (let idioma in idiomas) {
+            let mensaje = document.createElement("p");
+            mensaje.classList.add("mensaje");
+            mensaje.innerHTML = `${idiomas[idioma]} <span class="corazon">❤️</span>`;
+            contenedor.appendChild(mensaje);
+        }
+    </script>
+</body>
+</html>
